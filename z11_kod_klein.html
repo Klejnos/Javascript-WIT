@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Zadanie 11 - kod</title>
+    </head>
+    <body>
+        <center>
+        <h1>Zadanie 11 kod: </h1>
+        <textarea readonly rows="25" cols="85"><!DOCTYPE html>   
+<head>    
+    <title>Zadanie 11</title>    
+    <meta charset="utf-8">   
+</head>  
+<body> 
+    <div style="color: green; font-size: 38px;"> 
+        <script language="JavaScript"> 
+            do{
+                var d1_kle=prompt("Dzień 1:","Wpisz tutaj"); 
+                var d2_kle=prompt("Dzień 2:","Wpisz tutaj"); 
+            }while(!(d1_kle>=d2_kle && (d1_kle>=1 && d1_kle<=31) && (d2_kle>=1 && d2_kle<=31)));
+            var sekunda = 86400; 
+            var dni;
+            var sekundy;
+            var a=parseInt(d1_kle); 
+            var b=parseInt(d2_kle); 
+            dni = a - b; 
+            sekundy = sekunda * dni;
+            document.write("Ilość sekund: " + sekundy + "<br>"); 
+        </script> 
+    </div> 
+</body> 
+</html> </textarea>
+        </center>
+    </body>
+</html>

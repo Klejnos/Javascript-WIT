@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Zadanie 12 - kod</title>
+    </head>
+    <body>
+        <center>
+        <h1>Zadanie 12 kod: </h1>
+        <textarea readonly rows="33" cols="85"><!DOCTYPE html>
+<head>
+    <title>Zadanie 12</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div style="color: green; font-size: 38px;"> 
+        <script language="JavaScript"> 
+            do{
+                var d1_kle=prompt("Dzień 1:","Wpisz tutaj");
+                var g1_kle=prompt("Godzina 1:","Wpisz tutaj"); 
+                var d2_kle=prompt("Dzień 2:","Wpisz tutaj");
+                var g2_kle=prompt("Godzina 2:","Wpisz tutaj");  
+            }while(!(d1_kle>=d2_kle && (d1_kle>=1 && d1_kle<=31) && (d2_kle>=1 && d2_kle<=31)) && (g1_kle<=1 && g1_kle>=24) && (g2_kle<=1 && g2_kle>=24));
+            
+            const sekunda = 86400; 
+            const sekundy_w_godzinie = 3600;
+
+            var a=parseInt(d1_kle); 
+            var b=parseInt(d2_kle); 
+            var c=parseInt(g1_kle);
+            var d=parseInt(g2_kle);
+
+            var t1 = (a - 1) * sekunda + c * sekundy_w_godzinie;
+            var t2 = (b - 1) * sekunda + d * sekundy_w_godzinie;
+
+            var roznica = Math.abs(t1 - t2);
+            document.write("Ilość sekund: " + roznica + "<br>");
+        </script>
+    </div>
+</body>
+</html></textarea>
+        </center>
+    </body>
+</html>
