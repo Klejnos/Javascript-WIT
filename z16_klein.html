@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <title>Zadanie 16</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div style="color:red;font-size:50px;">
+    <script language="JavaScript">
+        var l1_kle=prompt("liczba1=","");
+        var l2_kle=prompt("liczba2=","");
+        var suma_kle;
+        var a_kle=parseFloat(l1_kle);
+        var b_kle=parseFloat(l2_kle);
+        //suma_kle=a_kle+b_kle;
+        suma_kle = (a_kle*a_kle*a_kle) + ((a_kle*a_kle)*b_kle)*3 + (a_kle*(b_kle*b_kle))*3 + (b_kle*b_kle*b_kle);
+        document.write("("+a_kle+"+"+b_kle+")^3= "+a_kle+"^3 + "+"3*(("+a_kle+")^2)*("+b_kle+") + 3*("+a_kle+")*(("+b_kle+")^2) + "+b_kle+"^3 = "+(a_kle*a_kle*a_kle)+" + "+((a_kle*a_kle)*b_kle)*3+" + "+(a_kle*(b_kle*b_kle))*3+" + "+(b_kle*b_kle*b_kle)+" = "+suma_kle+"<br>");
+    </script>
+    </div>
+</body>
+</html>

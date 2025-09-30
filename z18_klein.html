@@ -1,0 +1,34 @@
+<!DOCTYPE html>   
+<head>    
+    <title> Zadanie 18 </title>    
+    <meta charset="utf-8">   
+</head>  
+<body> 
+    <div style="color:navy;font-size:50px;"> 
+    <script language="JavaScript"> 
+        var a_kle=parseFloat(prompt("a=","")); 
+        var b_kle=parseFloat(prompt("b=","")); 
+        function suma_kle(a_kle, b_kle) { 
+            return a_kle + b_kle; 
+        } 
+        function roznica_kle(a_kle, b_kle){
+            return a_kle - b_kle;
+        }
+        function iloczyn_kle(a_kle, b_kle){
+            return a_kle * b_kle;
+        }
+        function do_kwadratu_kle(a_kle){
+            return a_kle*a_kle;
+        }
+        function reszta_z_dzielenia_kle(a_kle, b_kle){
+            return a_kle % b_kle;
+        }
+        document.write("suma="+suma_kle(a_kle,b_kle)+"<br>"); 
+        document.write("roznica="+roznica_kle(a_kle, b_kle)+"<br>");
+        document.write("iloczyn="+iloczyn_kle(a_kle, b_kle)+"<br>");
+        document.write("kwadrat "+a_kle+"^2 = "+do_kwadratu_kle(a_kle)+"<br>");
+        document.write("kwadrat "+b_kle+"^2 = "+do_kwadratu_kle(b_kle)+"<br>");
+        document.write("reszta z dzielenia="+reszta_z_dzielenia_kle(a_kle, b_kle)+"<br>");
+    </script> 
+    </div> 
+</body> 
