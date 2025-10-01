@@ -8,18 +8,6 @@
         <script language="JavaScript"> 
             var m_kle = parseInt(prompt("Podaj m: ", "Wpisz tutaj"));
             document.write("1/" + m_kle + " = 1/" + (m_kle + 1) + " + 1/" + (m_kle*(m_kle+1)+1) + " + 1/" + (m_kle*(m_kle+1)*(m_kle*(m_kle+1)+1)) + "<br>");
-            
-            lewa = 1 / m_kle;
-            prawa = 1 / (m_kle + 1) + 1 / (m_kle*(m_kle+1)+1) + 1 / (m_kle*(m_kle+1)*(m_kle*(m_kle+1)+1));
-
-            document.write("Lewa strona = " + lewa + "<br>");
-            document.write("Prawa strona = " + prawa + "<br>");
-
-            if (Math.abs(lewa - prawa) < 0.1) {
-                document.write("Zgadza się");
-            } else {
-                document.write("Coś się nie zgadza");
-            }
         </script>
     </div>
 </body>
