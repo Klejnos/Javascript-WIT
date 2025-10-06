@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Zadanie 19 - kod</title>
+    </head>
+    <body>
+        <center>
+        <h1>Zadanie 19 kod: </h1>
+        <textarea readonly rows="40" cols="100"><html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 20</title>
+</head>
+<body>
+<p>Podaj x punktu A: <input type="text" id="x1"></p>
+<p>Podaj y punktu A: <input type="text" id="y1"></p>
+<p>Podaj x punktu B: <input type="text" id="x2"></p>
+<p>Podaj y punktu B: <input type="text" id="y2"></p>
+<p>Podaj x punktu C: <input type="text" id="x3"></p>
+<p>Podaj y punktu C: <input type="text" id="y3"></p>
+<input type="button" value="Oblicz D1" onclick="AB_kle()"><br><br>
+<input type="button" value="Oblicz D2" onclick="BC_kle()"><br><br>
+<input type="button" value="Oblicz D3" onclick="AC_kle()"><br><br>
+<script>
+function AB_kle() {
+    var x1_kle = parseFloat(document.getElementById("x1").value);
+    var y1_kle = parseFloat(document.getElementById("y1").value);
+    var x2_kle = parseFloat(document.getElementById("x2").value);
+    var y2_kle = parseFloat(document.getElementById("y2").value);
+    var d1_kle = Math.sqrt(Math.pow((x1_kle - x2_kle), 2) + Math.pow((y1_kle - y2_kle), 2));
+    document.write("D1 = "+ d1_kle.toFixed(2));}
+function BC_kle() {
+    var x2_kle = parseFloat(document.getElementById("x2").value);
+    var y2_kle = parseFloat(document.getElementById("y2").value);
+    var x3_kle = parseFloat(document.getElementById("x3").value);
+    var y3_kle = parseFloat(document.getElementById("y3").value);
+    var d2_kle = Math.sqrt(Math.pow((x2_kle - x3_kle), 2) + Math.pow((y2_kle - y3_kle), 2));
+    document.write("D2 = "+ d2_kle.toFixed(2));}
+function AC_kle() {
+    var x1_kle = parseFloat(document.getElementById("x1").value);
+    var y1_kle = parseFloat(document.getElementById("y1").value);
+    var x3_kle = parseFloat(document.getElementById("x3").value);
+    var y3_kle = parseFloat(document.getElementById("y3").value);
+    var d3_kle = Math.sqrt(Math.pow((x1_kle - x3_kle), 2) + Math.pow((y1_kle - y3_kle), 2));
+    document.write("D3 = "+ d3_kle.toFixed(2));}
+</script>
+</body>
+</html></textarea>
+        </center>
+    </body>
+</html>
