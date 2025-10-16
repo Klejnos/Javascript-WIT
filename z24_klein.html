@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zadanie 24</title>
+        <style>
+            body{
+                background-color: grey;
+                color: darkblue;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <script>
+            var x1_kle = parseFloat(prompt("x1=", ""));
+            var x2_kle = parseFloat(prompt("x2=", ""));
+
+            var x1_radiany = (x1_kle*Math.PI)/180;
+            var y1_kle = 3*x1_kle*5/7;
+            var y2_kle = 2*Math.cos(x1_radiany) + 3*Math.sin(x1_radiany);
+            var y3_kle = Math.cbrt(Math.pow(x1_kle, 5) + 2*Math.pow(x2_kle, 4)) * Math.abs(x1_kle - x2_kle);
+
+            document.write("x1 = " + x1_kle + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x2 = " + x2_kle + "<br> x1 = " + x1_kle + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x1 = " + x1_radiany.toFixed(2) + "<br>");
+            document.write("y1 = " + y1_kle.toFixed(2) + "<br> y2 = " + y2_kle.toFixed(2) + "<br> y3 = " + y3_kle.toFixed(2));
+            </script>
+        </form>
+    </body>
+</html>
