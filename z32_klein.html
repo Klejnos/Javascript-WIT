@@ -1,0 +1,27 @@
+<html> 
+     <head> 
+           <script type="text/javascript"> 
+              function router(marka_k,model_k,zasieg_k)//początek konstruktora 
+  { 
+   this.marka=marka_k; 
+   this.model=model_k; 
+   this.zasieg=zasieg_k;   
+  }//koniec konstruktora 
+              router.prototype.wypisz = function () //definicja metody 
+      { 
+         alert(this.marka + ' ' + this.model+ ' ' + this.zasieg); 
+      }; 
+  let router1 = new router("Asus", "Mark One", "67 metrów"); // nowy obiekt router1 
+  let router2 = new router("Microsoft", "Mark Two", "1 centymetr"); 
+  router1.wypisz(); // uruchomienie metody wypisz() dotyczącej routera 1 
+  router2.wypisz(); 
+                document.write("dostęp do właściwości"+"<br>"); 
+// poniżej dostęp do pól osoby1 
+     document.write("router pierwszy"+"   "+router1.marka+"   "+router1.model+"   "+router1.zasieg); 
+            </script> 
+     </head> 
+<body> 
+ <br> 
+   programowanie obiektowe
+</body> 
+</html>
