@@ -11,29 +11,29 @@
         <script type="text/javascript">
             var router = {
             marka: 'ASUS',
-            rodzaj: 'Męski',
+            model: 'Mark One',
             waga: '4382kg',
-            pokaz: function () {
-                document.write(this.marka + ", " + this.rodzaj + ", "  + this.waga) 
+            router_wyswietl_klein: function () {
+                document.write(this.marka + ", " + this.model + ", "  + this.waga) 
                 }
             }
-            router.pokaz(); 
+            router.router_wyswietl_klein(); 
             router.zasieg=67;
-            router.napisz = function() {alert('Zasięg routera to: ' + this.zasieg + 'm')}
-            router.napisz();
+            router.router_pokaz_klein = function() {alert('Zasięg routera to: ' + this.zasieg + 'm')}
+            router.router_pokaz_klein();
         </script> 
     </head> 
 <body> 
 <br> 
     <p>Programowanie obiektowe <br> 
         Obiekt to router <br> 
-        Pola: marka, rodzaj, waga<br> 
+        Pola: marka, model, waga<br> 
         Marka: ASUS<br> 
-        Rodzaj: Męski<br> 
+        Model: Mark One<br> 
         Waga: 4832kg<br> 
-        Metoda: pokaz()<br>
+        Metoda: router_wyswietl_klein()<br>
         nowe pole to zasieg<br>
-        nowa metoda to napisz();<br>
+        nowa metoda to router_pokaz_klein();<br>
     </p>
 </body> 
 </html> </textarea>
