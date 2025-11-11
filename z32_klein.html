@@ -7,17 +7,32 @@
    this.model=model_k; 
    this.zasieg=zasieg_k;   
   }//koniec konstruktora 
+  
               router.prototype.wypisz = function () //definicja metody 
       { 
          alert(this.marka + ' ' + this.model+ ' ' + this.zasieg); 
       }; 
   let router1 = new router("Asus", "Mark One", "67 metrów"); // nowy obiekt router1 
   let router2 = new router("Microsoft", "Mark Two", "1 centymetr"); 
+  let router3 = new router("Razer", "Mark Three", "150 dm^2")
   router1.wypisz(); // uruchomienie metody wypisz() dotyczącej routera 1 
   router2.wypisz(); 
+  router3.wypisz();
                 document.write("dostęp do właściwości"+"<br>"); 
 // poniżej dostęp do pól osoby1 
-     document.write("router pierwszy"+"   "+router1.marka+"   "+router1.model+"   "+router1.zasieg); 
+     document.write("router pierwszy"+"   "+router1.marka+"   "+router1.model+"   "+router1.zasieg + "<br>"); 
+     document.write("router pierwszy"+"   "+router2.marka+"   "+router2.model+"   "+router2.zasieg + "<br>"); 
+     document.write("router pierwszy"+"   "+router3.marka+"   "+router3.model+"   "+router3.zasieg + "<br>"); 
+            
+      
+      router.prototype.producent = "PolTech";
+      router.prototype.router_pokaz_klein = function() {
+         alert("Producent: " + this.producent);
+      };
+
+      router1.router_pokaz_klein();
+      router2.router_pokaz_klein();
+      router3.router_pokaz_klein();
             </script> 
      </head> 
 <body> 
