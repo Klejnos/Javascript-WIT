@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 47</title>
+</head>
+<body>
+    <script>
+        let a_kle, b_kle, c_kle, liczba1_kle, liczba2_kle, liczba3_kle;
+        do{
+            liczba1_kle = prompt("Podaj a:", "");
+            a_kle = parseFloat(liczba1_kle);
+            liczba2_kle = prompt("Podaj b:", "");
+            b_kle = parseFloat(liczba2_kle);
+            liczba3_kle = prompt("Podaj c:", "");
+            c_kle = parseFloat(liczba3_kle);
+        } while (!((a_kle>0) && (b_kle>0) && (c_kle>0) && (a_kle+b_kle>c_kle) && (a_kle+c_kle>b_kle) && (c_kle+b_kle>a_kle)));
+        document.write("Boki= " + a_kle + ", " + b_kle + ", " + c_kle);
+    </script>
+</body>
+</html>

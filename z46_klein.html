@@ -1,0 +1,22 @@
+<!DOCTYPE html>   
+<head>    
+<title>Sprawdzenie danych Klein</title>    
+<meta charset="utf-8">   
+</head>  
+<body> 
+<div style="color:red;font-size:50px;"> 
+<script language="JavaScript"> 
+do { 
+var liczba1_kle=prompt("wysokość=",""); 
+var h_kle=parseFloat(liczba1_kle); 
+} while ( h_kle<=0); 
+do { 
+var liczba1_kle=prompt("podstawę=",""); 
+var a_kle=parseFloat(liczba1_kle); 
+} while(!( a_kle>0)); 
+var Pole_kle=a_kle*h_kle/2; 
+document.write("Pole="+Pole_kle.toFixed(2)+" cm^2"+"<br>"); 
+</script> 
+</div> 
+</body> 
+</html> 
