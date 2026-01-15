@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 58</title>
+</head>
+<body>
+    <script>
+        let x = parseFloat(prompt("Podaj 1 liczbę: ", ""));
+        let y = parseFloat(prompt("Podaj 1 liczbę: ", ""));
+        if (x < y) {
+            for (let i = x; i < y; i++) {
+                if (i % 2 != 0) document.write(i);
+            }
+        }
+        else if (x > y) {
+            for (let i = x; i < y; i++) {
+                if (i % 2 != 0) document.write(i);
+            }
+        }
+        else { 
+            confirm("Liczba 1 i 2 są takie same");
+        }
+    </script>
+</body>
+</html>
